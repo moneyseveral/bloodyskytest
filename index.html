@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ультра сайт 3000</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Comic Sans MS, sans-serif;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #ff0066, #ffcc00, #00ccff, #6600ff);
+      background-size: 400% 400%;
+      animation: rainbow 10s infinite linear;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes rainbow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 15px 30px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background-color: #222;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>Добро пожаловать на Ультра Сайт 3000 🚀</h1>
+  <button onclick="playSound()">НАЖМИ НА МЕНЯ 🔊</button>
+  <footer>© 2025 BloodySky Server</footer>
+
+  <audio id="sound" src="https://www.myinstants.com/media/sounds/vine-boom.mp3"></audio>
+  <script>
+    function playSound() {
+      document.getElementById("sound").play();
+    }
+  </script>
+</body>
+</html>
