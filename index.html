@@ -1,76 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>by newjersey</title>
+  <title>cat bio.txt</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Comic Sans MS, sans-serif;
-      overflow: hidden;
-      color: white;
-      text-align: center;
-    }
-
     body {
-      background: linear-gradient(-45deg, #ff0066, #ffcc00, #00ccff, #6600ff);
-      background-size: 400% 400%;
-      animation: rainbow 10s infinite linear;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @keyframes rainbow {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    h1 {
-      font-size: 48px;
-      text-shadow: 2px 2px 5px black;
-    }
-
-    button {
-      font-size: 24px;
-      padding: 15px 30px;
-      margin-top: 20px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
       background-color: #000;
       color: #fff;
-      transition: transform 0.2s ease;
+      font-family: "Courier New", Courier, monospace;
+      padding: 20px;
     }
-
-    button:hover {
-      transform: scale(1.1);
-      background-color: #222;
+    .prompt::before {
+      content: "┌──(nj㉿kali)-[~/]";
+      color: #33aaff;
+      display: block;
     }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 14px;
-      color: rgba(255,255,255,0.6);
+    .cmd {
+      white-space: pre-wrap;
+      color: #ffffff;
+    }
+    .cmd::before {
+      content: "└─$ ";
+      color: #33aaff;
+    }
+    .output {
+      margin-left: 2em;
+      white-space: pre-wrap;
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <marquee> BLOODYSKY ЛУЧШИЙ СЕРВЕР </marquee>
-  <h1>скоро откроется сервер</h1>
-  <button onclick="playSound()">БАБАХ</button>
-  <footer>© 2025 BloodySky Server</footer>
 
-  <audio id="sound" src="https://www.myinstants.com/media/sounds/vine-boom.mp3"></audio>
-  <script>
-    function playSound() {
-      document.getElementById("sound").play();
-    }
-  </script>
+<div class="prompt"></div>
+<div class="cmd">cat bio.txt</div>
+<div class="output">
+Все псевдонимы:  
+  nj  
+  njq8  
+  юзер : @vadet  
+
+Мирный, ничего против кого-то использовать не собираюсь  
+(указано в p.s)  
+
+Навыки:  
+  Virus Analysis  
+  Reverse Engineering  
+  Pasting lol (пастерок)  
+  Coding in Python3, Java, Kotlin,  
+  Node.JS, Lua, VB (.NET)  
+  CyberSecurity (Изучаю)  
+  System Administration  
+  OSINT (Полностью легальный, классический, законный)  
+
+Лист друзей:  
+  инфоркрайм  
+  кмз  
+  имя фамилия  
+  скозн  
+  ник (сокращение "" прозвище)  
+
+"nj" / "njq8" — унаследованный ник.  
+Мой знак, моя идентичность. Никому не дам его дожрать —  
+юзать, копировать или присваивать.  
+Я не создаю малварь и не занимаюсь вредоносной деятельностью.  
+
+P.S. Ник ранее принадлежал человеку, связанному с малварной сценой.  
+Теперь он в других руках — я использую его только в образовательных  
+и исследовательских целях.  
+Прошлое не определяет будущее. Имя — это выбор и ответственность.  
+
+P.P.S. Не пытайся юзать этот ник. Он занят. Навсегда.
+</div>
+
 </body>
 </html>
