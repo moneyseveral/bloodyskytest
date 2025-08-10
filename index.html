@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+</head>
 <body>
-<marquee> Ура </marquee>
-<h1>Я человек умеющий играть с читами.</h1>
-<p>@vadet</p>
+
+<div class="marquee">
+  <span>Ура</span>
+</div>
+
+<h1>Я человек, умеющий играть с читами.</h1>
+<p>tg: @vadet</p>
 
 </body>
 </html>
